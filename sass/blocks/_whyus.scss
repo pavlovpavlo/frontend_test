@@ -41,8 +41,30 @@
 		    padding-top: 4px;
 		    display: block;
 		    width: 100%;
-		    cursor: pointer;
+		    
 		    margin-bottom: 25px; 
+		    &:last-child{
+		    	margin-bottom: 0;
+		    }
+		    &:hover{
+		    	transition: 1s;
+				cursor: pointer;
+				border-left: 4px solid #28aff0;
+				& div{
+					& .number{
+						transition: 1s;
+						color: #28aff0;
+					}
+					& .name{
+						transition: 1s;
+						color: #fefefe;
+						font-family: "Proxima Nova Rg";
+						font-size: 20px;
+						font-weight: 600;
+						line-height: 30px;				
+					}   
+				}
+			}
 			& div{
 				display: flex;
 				align-items: center;
@@ -73,8 +95,6 @@
 		& .active{
 			border-left: 4px solid #28aff0;
 			& div{
-				display: flex;
-				align-items: center;
 				& .number{
 					color: #28aff0;
 				}
@@ -115,9 +135,9 @@
 				}
 			}
 			& legend{
-			    padding-left: 35px;
-			    padding-right: 35px;
-			    margin-left: 120px;
+			    padding-left: 25px;
+			    padding-right: 25px;
+			    margin-left: 100px;
 			    height: 24px;
 				color: #ffffff;
 				font-family: "Proxima Nova Rg";
@@ -137,11 +157,32 @@
 			align-items: center;
 			justify-content: flex-end;
 			margin-bottom: 37px;
+			transition: 0.5s;
 			&_arrow{
-				color: #23b3fe;
+				color: rgb(35, 179, 254);;
 				&:hover{
 					cursor: pointer;
+					color: rgba(35, 179, 254, 0.6);
+					transition: 0.5s;
 				}
+			}
+		}
+	}
+}
+@media (max-width: 960px){
+	
+	.tabs{
+		&__content{
+			 
+			&-info{
+				padding: 0;
+				& legend{
+					margin-left: 20px;
+					padding-left: 10px;
+					padding-right: 10px;
+					font-size: 23px;
+				}
+				
 			}
 		}
 	}
@@ -153,8 +194,9 @@
     		align-items: center;
 		}
 	}
+	
 }
-@media (max-width: 500px){
+@media (max-width: 575px){
 	.why-us{
 		&_title{
 			font-size: 34px;
@@ -169,9 +211,10 @@
 			&-info{
 				padding: 0;
 				& legend{
-					margin-left: 20px;
-					padding-left: 10px;
-					padding-right: 10px;
+					margin-left: 0px;
+					padding-left: 0px;
+					padding-right: 0px;
+					font-size: 23px;
 				}
 				&_content{
 					flex-direction: column;

@@ -1,4 +1,22 @@
-
+@font-face {
+	font-family: 'Proxima Nova Cn Lt';
+	src: url('../ProximaNovaCond-LightIt.eot');
+	src: local('Proxima Nova Condensed Light Italic'), local('ProximaNovaCond-LightIt'),
+		url('../ProximaNovaCond-LightIt.eot?#iefix') format('embedded-opentype'),
+		url('../ProximaNovaCond-LightIt.woff') format('woff'),
+		url('../ProximaNovaCond-LightIt.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 @font-face {
 	font-family: 'Proxima Nova Cn Lt';
 	src: url('../ProximaNovaCond-LightIt.eot');
