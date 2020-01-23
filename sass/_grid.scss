@@ -1,0 +1,37 @@
+*{
+	box-sizing: border-box;
+}
+body
+{
+  	margin: 0;
+  	padding: 0;
+  	width: 100%;
+  	max-width: 1920px;
+}
+.container{
+	height: 100%;
+	max-width: 1170px;
+	margin: auto;
+}
+@media (max-width: 1180px){
+	.container{
+		max-width: 950px;  
+	}
+}
+@media (max-width: 971px){ 
+	.container{
+		max-width: 850px; 
+	}
+}
+@media (max-width: 860px){
+	.container{
+		max-width: 100%;
+		padding: 0 20px;
+	}
+}
+@media (max-width: 768px){
+	.container{
+		max-width: 100%;
+		padding: 0 20px;
+	}
+}

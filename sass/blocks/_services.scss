@@ -1,0 +1,153 @@
+.services{
+	&__title{
+		margin-bottom: 103px;
+	}
+	& .container div{
+		display: flex;	
+		align-items: center;
+		margin-bottom: 21px;
+	}
+	&__content{
+		margin-right: 31px;
+		margin-left: 31px;
+		display: flex;
+		& div{
+			flex: 1;
+			margin-right: 62px;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 0;
+			&:last-child{
+				margin-right: 0;  
+			}
+		}
+		&-title{
+			max-height: 24px;
+			& span{
+				color: #ffffff;
+				font-family: "Proxima Nova Rg";
+				font-size: 20px;
+				font-weight: 300;
+
+			}
+		}
+		&-text{
+			& span{
+				font-family: "Proxima Nova Lt";
+				font-weight: 300; 
+				font-size: 20px;
+				opacity: 0.9;
+				color: #fefefe; 
+				margin-top: 25px;
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__item{
+
+		display: flex;	
+		align-items: center;
+		margin-right: 277px;
+		&:last-child{
+			margin-right: 0;
+		}
+		&-title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 33px;
+			width: 100%;
+			& div{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			& button{
+				width: 176px;
+				height: 50px;
+				border-radius: 25px;
+				border: 1px solid rgba(255,255,255, 0.25);
+				background: transparent;
+				color: #40beff;
+				font-family: "Gotham Pro";
+				font-size: 17px;
+				font-weight: 700;
+				/* Text style for "С, делать" */
+				letter-spacing: 0.42px;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+		}
+		
+		&-icon{
+			width: 24px;
+			height: 24px;
+			margin-right: 15px;	
+		}	
+		&-text{
+			color: #ffffff;
+			font-family: "Proxima Nova - Extrabld";
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 16.1px;
+		}
+		&-content{
+			max-width: 1236px;
+			min-height: 384px;
+			margin: auto;
+			box-shadow: 0 7px 25px rgba(0, 0, 0, 0.3);
+			background-color: #24272b;
+			padding-top: 48px;
+			padding-right: 32px;
+			padding-left: 34px;
+			padding-bottom: 46px
+		}
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+@media (max-width: 860px){
+	.services{
+		&__content{
+			flex-direction: column;
+			& div{
+				margin-bottom: 20px;
+			}
+		}
+		&__item{
+			margin-right: 177px;
+		}
+		
+	}
+}
+@media (max-width: 860px){
+	.services{
+		
+		&__item{
+			margin-right: 77px;
+		}
+		
+	}
+}
+@media (max-width: 430px){
+	.services{
+		&__item{
+			margin-right: 0;
+		}
+		& .container{
+			& div{
+				flex-direction: column;
+    			align-items: center;
+			}
+		}
+		&__item{
+			&-content{
+				padding-right: 5px;
+    padding-left: 5px;
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,16 @@
+.section{
+	
+}
+.button{
+	
+}
+
+
+@media (max-width: 576px){
+	.section{
+		padding: 40px 0;		
+		&-title{
+			font-size: 16px;
+		}
+	}
+}

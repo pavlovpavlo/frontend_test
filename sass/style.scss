@@ -1,0 +1,13 @@
+@import 'normalize';
+//Базовые настройки сетки
+@import 'grid';
+//настройки цветов
+@import 'colors';
+//настройки шрифтов
+@import 'fonts';
+//Настройки интерфейса
+@import 'interface';
+// Шапка сайта
+@import 'blocks/_nav.scss';
+@import 'blocks/_whyus.scss';
+@import 'blocks/_services.scss';

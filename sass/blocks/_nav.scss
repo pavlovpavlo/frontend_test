@@ -1,0 +1,175 @@
+.header{
+	max-width: 1920px;
+	min-height: 729px;
+	padding-top: 30px;
+	padding-bottom: 58px;
+	background-color: #25282c;
+	background: #25282c url("../img/Background.jpg") no-repeat center;
+    background-size: cover;
+    &__container{
+    	display: flex;
+    	align-items: center;
+    	flex-direction: column;
+    }
+    &__main{
+    	margin: auto;
+    	max-width: 826px;
+		margin-top: 113px;
+		&-title{
+			max-width: 616px;
+			text-align: center;
+			color: #ffffff;
+			font-family: "Myriad Pro";
+			font-size: 44px;
+			font-weight: 400;
+			line-height: 60px;
+			text-transform: uppercase;
+			margin-top: 33px;
+			margin-bottom: 57px;
+			& span{
+				color: #23b3fe;
+			}
+		}
+		&-search{
+			width: 493px;
+			height: 64px;
+			margin-bottom: 58px;
+			& input{
+				width: 100%;
+				height: 100%;
+				box-shadow: 0 4px 17px 1px rgba(0, 0, 0, 0.15);
+				border-radius: 5px;
+				border: none;
+				outline: none;
+				background: rgba(88, 94, 103,0.35) url("../img/search_icon.png"); 
+				background-repeat: no-repeat;
+    			background-position: top 22px right 23px; 
+				padding-left: 24px ;
+				padding-right: 43px;
+				padding-top: 22px;
+				padding-bottom: 22px;
+				color: #ffffff;
+				font-family: "Gotham Pro";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 60px;
+			}
+		}
+		&-button{
+			width: 254px;
+			height: 64px;
+			box-shadow: 0 11px 23px 1px rgba(35, 179, 254, 0.21);
+			border-radius: 32px;
+			background-color: #23b3fe;
+			text-align: center;
+			border: none;
+			outline: none;
+			margin-bottom: 58px;
+			& span{
+				color: #ffffff;
+				font-family: "Gotham Pro";
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 16.1px;
+				text-transform: uppercase;
+				letter-spacing: 0.9px;
+			} 
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		&-scroll{
+			display: flex;
+	    	align-items: center;
+	    	flex-direction: column;
+			&_line{
+				width: 2px;
+				height: 41px;
+				background-color: rgba(35, 179, 254, 0.3);
+				margin-bottom: 19px;
+				padding-top: 14px;
+			}
+			&_subline{
+				width: 2px;
+				height: 27px;
+				background-color: rgb(35, 179, 254);;
+			}
+			&_text{
+				opacity: 0.45;
+				color: #ffffff;
+				font-family: "Proxima Nova";
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+    }
+}
+.navbar{
+	width: 100%;
+	height: 100%;
+	&__logo{
+		width: 168px;
+		height: 26px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	&__menu{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&-other{
+			display: flex;
+			align-items: center;
+		}
+
+	}
+	&__language{
+		display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    margin-right: 94px;
+		width: 70px;
+		height: 13px;
+		&-item{
+			color: #8d97a8;
+			font-family: "Proxima Nova";
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 72px;
+			text-transform: uppercase;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		&-active{
+			font-family: "Proxima Nova Th";
+			color: #ffffff;
+			font-weight: 600;
+		}
+	}
+	&__button{
+		width: 22px;
+		height: 16px;
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}
+@media (max-width: 510px){
+	.navbar{
+		&__language{
+			margin-right: 44px; 
+		}
+	}
+	.header{
+		&__main{
+			&-title{
+				font-size: 30px;
+			}
+			&-search{
+				width: 100%;
+			}
+		}
+	}
+}

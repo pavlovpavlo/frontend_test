@@ -1,0 +1,21 @@
+{
+  "name": "frontend test",
+  "version": "1.0.0",
+  "description": "frontend test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browserslist": "^4.6.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "postcss": "^7.0.17"
+  },
+  "dependencies": {}
+}
