@@ -8,43 +8,87 @@ function initListener()
 {
   document.querySelector(".fa-chevron-left").addEventListener("click",prevTabs,false);
   document.querySelector(".fa-chevron-right").addEventListener("click",nextTabs,false);
+  let closeIcons = document.getElementsByClassName("close");
+  
+  for(let i=0; i< closeIcons.length; i++){
+    closeIcons[i].addEventListener("click",hideTabs,false);
+  }
   document.getElementById("defaultOpen").click();
+  document.getElementById("autoTab").click();
 }
 function openTabs(evt, name) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabs__content-info");
+
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
+
     tablinks = document.getElementsByClassName("tablinks");
+
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
+
     currentNumber = evt.currentTarget.dataset.number;
     document.querySelector(".tabs__content-count pre span").innerHTML = currentNumber;
     document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " active";
 }
+function showTabs(evt, name) {
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("services__item-content");
+
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("services__item");
+
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+function hideTabs() {
+  console.log("close")
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("services__item-content");
+
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("services__item");
+
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+}
 function prevTabs(){
   let i, j,  tablinks;
   tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        if(tablinks[i].dataset.number == currentNumber){
-          currentNumber = number[i].prev;
-          for (j = 0; j < tablinks.length; j++) {
-            if(tablinks[j].dataset.number == currentNumber){
-              tablinks[j].click();
-              break;
-            }
+
+  for (i = 0; i < tablinks.length; i++) {
+      if(tablinks[i].dataset.number == currentNumber){
+        currentNumber = number[i].prev;
+        for (j = 0; j < tablinks.length; j++) {
+          if(tablinks[j].dataset.number == currentNumber){
+            tablinks[j].click();
+            break;
           }
-          break;
         }
-    }
+        break;
+      }
+  }
 
 }
 function nextTabs(){
   let i, j,  tablinks;
   tablinks = document.getElementsByClassName("tablinks");
+
     for (i = 0; i < tablinks.length; i++) {
         if(tablinks[i].dataset.number == currentNumber){
           currentNumber = number[i].next;

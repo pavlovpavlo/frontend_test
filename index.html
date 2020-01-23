@@ -146,24 +146,114 @@
 				<h1 class="why-us_title services__title">мы делаем</h1>
 				<div class="container">	
 					<div>
-						<div class="services__item">
+						<div class="services__item" onclick="showTabs(event, 'development')">
 							<div class="services__item-icon"><img src="img/plus.png" alt="plus"></div>
 							<div class="services__item-text">Разработка сайтов</div>
 						</div>
-						<div class="services__item">
+						<div class="services__item" onclick="showTabs(event, 'design')">
 							<div class="services__item-icon"><img src="img/plus.png" alt="plus"></div>
 							<div class="services__item-text">Дизайн</div>
+						</div>
+						<div class="services__item " id="autoTab" onclick="showTabs(event, 'seo_go')">
+							<div class="services__item-icon"><img src="img/plus.png" alt="plus"></div>
+							<div class="services__item-text">SEO продвижение</div>
 						</div>
 					</div>
 					
 				</div>
-				<div class="services__item-content">
+				<div class="services__item-content" id="seo_go">
 					<div class="services__container">
 						<div class="services__item-header">
 							<div class="services__item services__item-title">
 								<div>
-									<div class="services__item-icon"><img src="img/close.png" alt="close"></div>
+									<div class="services__item-icon"><img class="close" src="img/close.png" alt="close"></div>
 									<div class="services__item-text">SEO продвижение</div>
+								</div>
+								<button>Сделать заказ</button>
+							</div>
+							<div class="services__content">
+								<div>
+									<div class="services__content-title">
+										<span>Почему:</span>
+									</div>
+									<div class="services__content-text">
+										<span>— Используем комплексные решения (SEO, SMM, A/B)</span>
+										<span>— Анализируем и обходим конкурентов</span>
+										<span>— Подготовим план продвижения соответствующий Вашему бюджету</span>
+									</div>
+								</div>
+								<div>
+									<div class="services__content-title">
+										<span>Зачем:</span>
+									</div>
+									<div class="services__content-text">
+										<span>Предоставьте возможность миру узнать о Вашем товаре/услуге</span>
+										<span>Ваш бренд имеет возможность стать знаменитым, а сайт прибыльным</span>
+									</div>
+								</div>
+								<div>
+									<div class="services__content-title">
+										<span>Сколько:</span>
+									</div>
+									<div class="services__content-text">
+										<span>Цена для каждого проекта обсуждается индивидуально</span>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__item-content" id="development">
+					<div class="services__container">
+						<div class="services__item-header">
+							<div class="services__item services__item-title">
+								<div>
+									<div class="services__item-icon"><img class="close" src="img/close.png" alt="close"></div>
+									<div class="services__item-text">Разработка сайтов</div>
+								</div>
+								<button>Сделать заказ</button>
+							</div>
+							<div class="services__content">
+								<div>
+									<div class="services__content-title">
+										<span>Почему:</span>
+									</div>
+									<div class="services__content-text">
+										<span>— Используем комплексные решения (SEO, SMM, A/B)</span>
+										<span>— Анализируем и обходим конкурентов</span>
+										<span>— Подготовим план продвижения соответствующий Вашему бюджету</span>
+									</div>
+								</div>
+								<div>
+									<div class="services__content-title">
+										<span>Зачем:</span>
+									</div>
+									<div class="services__content-text">
+										<span>Предоставьте возможность миру узнать о Вашем товаре/услуге</span>
+										<span>Ваш бренд имеет возможность стать знаменитым, а сайт прибыльным</span>
+									</div>
+								</div>
+								<div>
+									<div class="services__content-title">
+										<span>Сколько:</span>
+									</div>
+									<div class="services__content-text">
+										<span>Цена для каждого проекта обсуждается индивидуально</span>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__item-content" id="design">
+					<div class="services__container">
+						<div class="services__item-header">
+							<div class="services__item services__item-title">
+								<div>
+									<div class="services__item-icon"><img class="close" src="img/close.png" alt="close"></div>
+									<div class="services__item-text">Дизайн</div>
 								</div>
 								<button>Сделать заказ</button>
 							</div>

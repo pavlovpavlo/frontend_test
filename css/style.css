@@ -349,6 +349,20 @@ body {
   font-style: italic; }
 
 @font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Lt';
+  src: url("../ProximaNovaCond-LightIt.eot");
+  src: local("Proxima Nova Condensed Light Italic"), local("ProximaNovaCond-LightIt"), url("../ProximaNovaCond-LightIt.eot?#iefix") format("embedded-opentype"), url("../ProximaNovaCond-LightIt.woff") format("woff"), url("../ProximaNovaCond-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
   font-family: 'Proxima Nova Lt';
   src: url("../fonts/ProximaNova-LightIt.eot");
   src: local("Proxima Nova Light Italic"), local("ProximaNova-LightIt"), url("../fonts/ProximaNova-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-LightIt.woff") format("woff"), url("../fonts/ProximaNova-LightIt.ttf") format("truetype");
@@ -1041,6 +1055,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 21px; }
+  .services .container div .active {
+    display: none; }
 
 .services__content {
   margin-right: 31px;
@@ -1087,7 +1103,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 277px; }
+  margin-right: 20px; }
   .services__item:last-child {
     margin-right: 0; }
   .services__item-title {
@@ -1167,15 +1183,9 @@ body {
       margin-bottom: 0;
       margin-right: 0; }
       .services__content div:last-child {
-        margin-bottom: 20px; }
-  .services__item {
-    margin-right: 177px; } }
+        margin-bottom: 20px; } }
 
 @media (max-width: 860px) {
-  .services__item {
-    margin-right: 77px; } }
-
-@media (max-width: 530px) {
   .services .container div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1183,7 +1193,9 @@ body {
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center; } }
+
+@media (max-width: 530px) {
   .services__item {
     margin-right: 0; }
     .services__item-content {

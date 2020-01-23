@@ -6,6 +6,9 @@
 		display: flex;	
 		align-items: center;
 		margin-bottom: 21px;
+		& .active{
+			display: none;
+		}
 	}
 	&__content{
 		margin-right: 31px;
@@ -48,7 +51,8 @@
 
 		display: flex;	
 		align-items: center;
-		margin-right: 277px;
+		margin-right: 20px;
+
 		&:last-child{
 			margin-right: 0;
 		}
@@ -128,22 +132,11 @@
 				}
 			}
 		}
-		&__item{
-			margin-right: 177px;
-		}
+
 		
 	}
 }
 @media (max-width: 860px){
-	.services{
-		
-		&__item{
-			margin-right: 77px;
-		}
-		
-	}
-}
-@media (max-width: 530px){
 	.services{
 		& .container{
 			& div{
@@ -151,6 +144,11 @@
     			align-items: center;
 			}
 		}
+		
+	}
+}
+@media (max-width: 530px){
+	.services{
 		&__item{
 			margin-right: 0;
 			&-content{
