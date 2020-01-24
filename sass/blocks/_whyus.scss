@@ -204,6 +204,9 @@
 		&_content{
 			max-width: none;
 		}
+		&_link{
+			margin-right: 0;
+		}
 	}
 	.tabs{
 		&__caption{
@@ -219,12 +222,14 @@
 							font-size: 17px;				
 						}   
 					}
-			}
+				}
 			}
 			& .active{
-				& .name{
-					font-size: 17px;
-					font-weight: 600;			
+				& div{
+					& .name{
+						font-size: 17px;
+						font-weight: 600;			
+					}
 				}
 			}
 		
