@@ -1030,7 +1030,7 @@ body {
       margin-left: 0px;
       padding-left: 0px;
       padding-right: 0px;
-      font-size: 23px; }
+      font-size: 18px; }
     .tabs__content-info_content {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1133,6 +1133,7 @@ body {
       height: 50px;
       border-radius: 25px;
       border: 1px solid rgba(255, 255, 255, 0.25);
+      outline: 0;
       background: transparent;
       color: #40beff;
       font-family: "Gotham Pro";
