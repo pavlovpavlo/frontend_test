@@ -1024,6 +1024,8 @@ body {
     font-size: 34px; }
   .why-us_content {
     max-width: none; }
+  .tabs__caption li div .name {
+    font-size: 17px; }
   .tabs__content-info {
     padding: 0; }
     .tabs__content-info legend {
