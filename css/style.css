@@ -339,7 +339,7 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
-    padding: 0 20px; } }
+    padding: 0 10px; } }
 
 @font-face {
   font-family: 'Proxima Nova Cn Lt';
@@ -1025,6 +1025,8 @@ body {
   .why-us_content {
     max-width: none; }
   .tabs__caption li div .name {
+    font-size: 17px; }
+  .tabs__caption li:hover div .name {
     font-size: 17px; }
   .tabs__caption .active .name {
     font-size: 17px;

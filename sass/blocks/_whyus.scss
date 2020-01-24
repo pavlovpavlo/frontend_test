@@ -213,6 +213,13 @@
 						font-size: 17px;
 					}
 				}
+				&:hover{
+					& div{
+						& .name{
+							font-size: 17px;				
+						}   
+					}
+			}
 			}
 			& .active{
 				& .name{
